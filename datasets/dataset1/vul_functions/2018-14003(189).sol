@@ -1,0 +1,13 @@
+function batchTransfer(address[] _receivers, uint256 _value) public {
+    uint cnt = _receivers.length;
+    uint256 amount = uint256(cnt) * _value;
+    require(cnt > 0 && cnt <= 10);
+    require(_value > 0 && balanceOf[msg.sender] >= amount);
+    require(!frozenAccount[msg.sender]);                     
+
+    balanceOf[msg.sender] -= amount;
+    for (uint i = 0; i < cnt; i++) {
+        balanceOf[_receivers[i]] += _value;
+        Transfer(msg.sender, _receivers[i], _value);
+    }
+  }

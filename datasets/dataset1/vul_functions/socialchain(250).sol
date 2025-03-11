@@ -1,0 +1,15 @@
+function transferMulti(address[] _to, uint256[] _value) public returns (uint256 amount){
+        require(_to.length == _value.length);
+        uint8 len = uint8(_to.length);
+        for(uint8 j; j<len; j++){
+            amount += _value[j]*10**uint256(decimals);
+        }
+        require(balanceOf[msg.sender] >= amount);
+        for(uint8 i; i<len; i++){
+            address _toI = _to[i];
+            uint256 _valueI = _value[i]*10**uint256(decimals);
+            balanceOf[_toI] += _valueI;
+            balanceOf[msg.sender] -= _valueI;
+            emit Transfer(msg.sender, _toI, _valueI);
+        }
+    }
