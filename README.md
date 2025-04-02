@@ -25,12 +25,12 @@ Official code for "Assessing the GPT Series in Smart Contract Vulnerability Repa
 ### Related files when traditional contract vulnerability repair tools
 
 ```
-├── ely.py : Main script for integrating LLM with traditional tools
-├── sguard : Directory containing sGuard tool for vulnerability repair
-├── Sguardplus: Enhanced version of sGuard with additional features
-├── smartfix: SmartFix tool for automated contract repair
-├── solcversion.py: Script for managing Solidity compiler versions
-└── tips: Directory containing tips and additional resources
+├── ely.py : Main script for batch processing with traditional tools
+├── sguard : Directory contain sguard tool repair results
+├── Sguardplus: Directory contain Sguardplus tool repair results
+├── smartfix: Directory contain smartfix tool repair results
+├── solcversion.py: Script for change Solidity compiler versions
+└── tips: Directory contain tips tool repair results
 ```
 
 ### Related files when using LLM to optimize legacy vulnerability repair tools
