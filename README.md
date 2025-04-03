@@ -7,6 +7,7 @@ Official code for "Assessing the GPT Series in Smart Contract Vulnerability Repa
 ### Related files for LLM-based contract vulnerability repair
 
 ```
+.
 ├── analysis.log
 ├── config.py
 ├── data_preprocessing.py : Functions that perform vulnerability contract preprocessing
@@ -25,6 +26,7 @@ Official code for "Assessing the GPT Series in Smart Contract Vulnerability Repa
 ### Related files when traditional contract vulnerability repair tools
 
 ```
+.
 ├── ely.py : Main script for batch processing with traditional tools
 ├── sguard : Directory contain sguard tool repair results
 ├── Sguardplus: Directory contain Sguardplus tool repair results
@@ -35,8 +37,16 @@ Official code for "Assessing the GPT Series in Smart Contract Vulnerability Repa
 
 ### Related files when using LLM to optimize legacy vulnerability repair tools
 
-└── README.md  
+```
+.
+├── gpt-downgrade.py : Downgrading version of contracts with LLM
+├── gpt-detect.py : Detecting vulnerabilities with LLM
+└── tips.py: Repairing contract use the TIPS
+```
 
 ### Relevant documents in Discussion
 
+```
+.
 └── README.md ：Record the prompt format used, the code and the existing LLM repair part are known
+```
