@@ -1,9 +1,11 @@
 ## 📁 File Description
 
 ### Related Files When Traditional Contract Vulnerability Repair Tools
+```
 ├── gpt-detect.py : Main script for detecting vulnerability with LLM
 ├── gpt-downgrade.py : Main script for downgrade the version of contract with LLM
 └── tips.py : Main script for batch processing with traditional tool TIPS
+```
 
 ## 🔁 Reproducibility Steps
 
